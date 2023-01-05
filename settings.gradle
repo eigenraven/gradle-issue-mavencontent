@@ -1,1 +1,14 @@
+
+pluginManagement {
+    repositories {
+        mavenCentral {
+            mavenContent {
+                include("maven.group")
+            }
+        }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
 rootProject.name = 'reproducer-project'

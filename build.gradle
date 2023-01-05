@@ -1,0 +1,7 @@
+
+subprojects.forEach {
+    println(it.name)
+    if (it.name == "maven.group") {
+        throw new RuntimeException("maven.group should not be a subproject")
+    }
+}
